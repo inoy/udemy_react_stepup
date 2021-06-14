@@ -7,16 +7,18 @@ const style = {
 };
 
 const ChildArea = memo((props) => {
+  const { open, onClickClose } = props;
+
   const data = [...Array(2000).keys()];
   console.log('子コンポーネントがレンダリングされた');
   data.forEach(() => console.log('...'));
 
-  const { open } = props;
   return (
     <>
       {open ? (
         <div style={style}>
           <p>子コンポーネント</p>
+          <button onClick={onClickClose}>閉じる</button>
         </div>
       ) : null}
     </>
