@@ -33,3 +33,9 @@ const App = () => {
   );
 };
 ```
+
+## Style JSX
+
+`styled-jsx`
+
+デフォルトでは（？）[疑似クラス](https://developer.mozilla.org/ja/docs/Web/CSS/Pseudo-classes)（button:hover など）は利用不可
